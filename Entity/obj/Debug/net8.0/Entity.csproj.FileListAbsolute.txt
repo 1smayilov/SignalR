@@ -1,0 +1,15 @@
+C:\Users\Etimad\Desktop\SignalR\Entity\obj\Debug\net8.0\Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Etimad\Desktop\SignalR\Entity\obj\Debug\net8.0\Entity.AssemblyInfoInputs.cache
+C:\Users\Etimad\Desktop\SignalR\Entity\obj\Debug\net8.0\Entity.AssemblyInfo.cs
+C:\Users\Etimad\Desktop\SignalR\Entity\obj\Debug\net8.0\Entity.csproj.CoreCompileInputs.cache
+C:\Users\Etimad\Desktop\SignalR\Entity\bin\Debug\net8.0\Entity.deps.json
+C:\Users\Etimad\Desktop\SignalR\Entity\bin\Debug\net8.0\Entity.dll
+C:\Users\Etimad\Desktop\SignalR\Entity\bin\Debug\net8.0\Entity.pdb
+C:\Users\Etimad\Desktop\SignalR\Entity\bin\Debug\net8.0\Core.dll
+C:\Users\Etimad\Desktop\SignalR\Entity\bin\Debug\net8.0\Core.pdb
+C:\Users\Etimad\Desktop\SignalR\Entity\obj\Debug\net8.0\Entity.csproj.AssemblyReference.cache
+C:\Users\Etimad\Desktop\SignalR\Entity\obj\Debug\net8.0\Entity.csproj.Up2Date
+C:\Users\Etimad\Desktop\SignalR\Entity\obj\Debug\net8.0\Entity.dll
+C:\Users\Etimad\Desktop\SignalR\Entity\obj\Debug\net8.0\refint\Entity.dll
+C:\Users\Etimad\Desktop\SignalR\Entity\obj\Debug\net8.0\Entity.pdb
+C:\Users\Etimad\Desktop\SignalR\Entity\obj\Debug\net8.0\ref\Entity.dll

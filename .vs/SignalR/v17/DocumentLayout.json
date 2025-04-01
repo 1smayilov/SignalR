@@ -1,0 +1,297 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Etimad\\Desktop\\SignalR\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|c:\\users\\etimad\\desktop\\signalr\\webui\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|solutionrelative:webui\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|C:\\Users\\Etimad\\Desktop\\SignalR\\webui\\views\\shared\\components\\_layoutsidebarcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|solutionrelative:webui\\views\\shared\\components\\_layoutsidebarcomponentpartial\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF92858-51B0-4D93-98C8-AD724A05E15E}|WebApi\\WebApi.csproj|C:\\Users\\Etimad\\Desktop\\SignalR\\webapi\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF92858-51B0-4D93-98C8-AD724A05E15E}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|C:\\Users\\Etimad\\Desktop\\SignalR\\webui\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|solutionrelative:webui\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|C:\\Users\\Etimad\\Desktop\\SignalR\\webui\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|solutionrelative:webui\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|C:\\Users\\Etimad\\Desktop\\SignalR\\webui\\views\\category\\updatecategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|solutionrelative:webui\\views\\category\\updatecategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|C:\\Users\\Etimad\\Desktop\\SignalR\\webui\\views\\about\\updateabout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|solutionrelative:webui\\views\\about\\updateabout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|C:\\Users\\Etimad\\Desktop\\SignalR\\webui\\views\\about\\createabout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|solutionrelative:webui\\views\\about\\createabout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|C:\\Users\\Etimad\\Desktop\\SignalR\\webui\\dtos\\aboutdto\\resultaboutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|solutionrelative:webui\\dtos\\aboutdto\\resultaboutdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|C:\\Users\\Etimad\\Desktop\\SignalR\\webui\\views\\category\\createcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|solutionrelative:webui\\views\\category\\createcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|C:\\Users\\Etimad\\Desktop\\SignalR\\webui\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|solutionrelative:webui\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|C:\\Users\\Etimad\\Desktop\\SignalR\\webui\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|solutionrelative:webui\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|C:\\Users\\Etimad\\Desktop\\SignalR\\webui\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|solutionrelative:webui\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|C:\\Users\\Etimad\\Desktop\\SignalR\\webui\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|solutionrelative:webui\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|C:\\Users\\Etimad\\Desktop\\SignalR\\webui\\views\\product\\updateproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|solutionrelative:webui\\views\\product\\updateproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|C:\\Users\\Etimad\\Desktop\\SignalR\\webui\\views\\product\\createproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9D152FF3-5340-48B6-966F-F4F456354C2E}|WebUI\\WebUI.csproj|solutionrelative:webui\\views\\product\\createproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BF92858-51B0-4D93-98C8-AD724A05E15E}|WebApi\\WebApi.csproj|C:\\Users\\Etimad\\Desktop\\SignalR\\webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BF92858-51B0-4D93-98C8-AD724A05E15E}|WebApi\\WebApi.csproj|solutionrelative:webapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AboutController.cs",
+              "DocumentMoniker": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebApi\\Controllers\\AboutController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\AboutController.cs",
+              "ToolTip": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebApi\\Controllers\\AboutController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\AboutController.cs",
+              "ViewState": "AQIAADAAAAAAZ2ZmZmYiwDsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T14:35:07.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UpdateCategory.cshtml",
+              "DocumentMoniker": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Views\\Category\\UpdateCategory.cshtml",
+              "RelativeDocumentMoniker": "WebUI\\Views\\Category\\UpdateCategory.cshtml",
+              "ToolTip": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Views\\Category\\UpdateCategory.cshtml",
+              "RelativeToolTip": "WebUI\\Views\\Category\\UpdateCategory.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAB8AAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-29T14:27:57.91Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UpdateAbout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Views\\About\\UpdateAbout.cshtml",
+              "RelativeDocumentMoniker": "WebUI\\Views\\About\\UpdateAbout.cshtml",
+              "ToolTip": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Views\\About\\UpdateAbout.cshtml",
+              "RelativeToolTip": "WebUI\\Views\\About\\UpdateAbout.cshtml",
+              "ViewState": "AQIAAAgAAAAAMzMzMzMbwAwAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-29T14:27:25.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Views\\About\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebUI\\Views\\About\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Views\\About\\Index.cshtml",
+              "RelativeToolTip": "WebUI\\Views\\About\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-29T12:24:48.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AboutController.cs",
+              "DocumentMoniker": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Controllers\\AboutController.cs",
+              "RelativeDocumentMoniker": "WebUI\\Controllers\\AboutController.cs",
+              "ToolTip": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Controllers\\AboutController.cs",
+              "RelativeToolTip": "WebUI\\Controllers\\AboutController.cs",
+              "ViewState": "AQIAAD8AAAAAZmZmZmYSwFYAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T12:24:00.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Views\\Shared\\Components\\_LayoutSidebarComponentPartial\\Default.cshtml",
+              "RelativeDocumentMoniker": "WebUI\\Views\\Shared\\Components\\_LayoutSidebarComponentPartial\\Default.cshtml",
+              "ToolTip": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Views\\Shared\\Components\\_LayoutSidebarComponentPartial\\Default.cshtml",
+              "RelativeToolTip": "WebUI\\Views\\Shared\\Components\\_LayoutSidebarComponentPartial\\Default.cshtml",
+              "ViewState": "AQIAADcAAABAMzMzMzMrwEIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-29T11:58:20.724Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CreateAbout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Views\\About\\CreateAbout.cshtml",
+              "RelativeDocumentMoniker": "WebUI\\Views\\About\\CreateAbout.cshtml",
+              "ToolTip": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Views\\About\\CreateAbout.cshtml",
+              "RelativeToolTip": "WebUI\\Views\\About\\CreateAbout.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-29T12:55:13.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CreateCategory.cshtml",
+              "DocumentMoniker": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Views\\Category\\CreateCategory.cshtml",
+              "RelativeDocumentMoniker": "WebUI\\Views\\Category\\CreateCategory.cshtml",
+              "ToolTip": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Views\\Category\\CreateCategory.cshtml",
+              "RelativeToolTip": "WebUI\\Views\\Category\\CreateCategory.cshtml",
+              "ViewState": "AQIAABcAAAAAAAAAAAAAADcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-29T12:56:24.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "WebUI\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "WebUI\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAE4AAAAAmpmZmZkZwFsAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T11:21:11.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "WebUI\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "WebUI\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAB4AAAAAzszMzMz8vwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T12:50:14.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ResultAboutDto.cs",
+              "DocumentMoniker": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\DTOs\\AboutDto\\ResultAboutDto.cs",
+              "RelativeDocumentMoniker": "WebUI\\DTOs\\AboutDto\\ResultAboutDto.cs",
+              "ToolTip": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\DTOs\\AboutDto\\ResultAboutDto.cs",
+              "RelativeToolTip": "WebUI\\DTOs\\AboutDto\\ResultAboutDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T12:29:10.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "WebUI\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "WebUI\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-29T12:31:08.349Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Views\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebUI\\Views\\Category\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Views\\Category\\Index.cshtml",
+              "RelativeToolTip": "WebUI\\Views\\Category\\Index.cshtml",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAADgAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-29T12:28:41.776Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "UpdateProduct.cshtml",
+              "DocumentMoniker": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Views\\Product\\UpdateProduct.cshtml",
+              "RelativeDocumentMoniker": "WebUI\\Views\\Product\\UpdateProduct.cshtml",
+              "ToolTip": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Views\\Product\\UpdateProduct.cshtml",
+              "RelativeToolTip": "WebUI\\Views\\Product\\UpdateProduct.cshtml",
+              "ViewState": "AQIAACYAAACAZmZmZmYkwCIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-29T11:21:17.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebUI\\Views\\Product\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "WebUI\\Views\\Product\\Index.cshtml",
+              "ViewState": "AQIAADAAAAAAAAAAAABQvTMAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-29T11:21:13.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CreateProduct.cshtml",
+              "DocumentMoniker": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Views\\Product\\CreateProduct.cshtml",
+              "RelativeDocumentMoniker": "WebUI\\Views\\Product\\CreateProduct.cshtml",
+              "ToolTip": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebUI\\Views\\Product\\CreateProduct.cshtml",
+              "RelativeToolTip": "WebUI\\Views\\Product\\CreateProduct.cshtml",
+              "ViewState": "AQIAABsAAACAZmZmZmYkwEAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-29T11:27:41.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebApi\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "WebApi\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Etimad\\Desktop\\SignalR\\WebApi\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "WebApi\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAABQAAAAANDMzMzPzvyQAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-29T11:23:42.522Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
