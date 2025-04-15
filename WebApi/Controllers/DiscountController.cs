@@ -27,16 +27,16 @@ namespace WebApi.Controllers
 			var serviceResult = await _discountService.GetAllAsync();
 			var mapResult = _mapper.Map<List<ResultDiscountDto>>(serviceResult.Data);
 			var dataResult = new DataResult<List<ResultDiscountDto>>(mapResult, serviceResult.Success, serviceResult.Message);
-			return serviceResult.Success ? Ok(dataResult) : BadRequest(serviceResult);
+			return serviceResult.Success ? Ok(dataResult) : BadRequest(dataResult);
 		}
 
-		[HttpGet("GetById")]
+		[HttpGet("{id}")]
 		public async Task<IActionResult> GetByIdAsync(int id)
 		{
 			var serviceResult = await _discountService.GetByIdAsync(id);
 			var mapResult = _mapper.Map<GetByIdDiscountDto>(serviceResult.Data);
 			var dataResult = new DataResult<GetByIdDiscountDto>(mapResult, serviceResult.Success, serviceResult.Message);
-			return serviceResult.Success ? Ok(dataResult) : BadRequest(serviceResult);
+			return serviceResult.Success ? Ok(dataResult) : BadRequest(dataResult);
 		}
 
 		[HttpPut]
@@ -55,7 +55,7 @@ namespace WebApi.Controllers
 			return result.Success ? Ok(result) : BadRequest(result);
 		}
 
-		[HttpDelete]
+		[HttpDelete("{id}")]
 		public async Task<IActionResult> DeleteAsync(int id)
 		{
 			var data = await _discountService.GetByIdAsync(id);

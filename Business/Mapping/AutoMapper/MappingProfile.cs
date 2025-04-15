@@ -5,11 +5,14 @@ using Entity.DTOs.BookingDto;
 using Entity.DTOs.CategoryDto;
 using Entity.DTOs.ContactDto;
 using Entity.DTOs.DiscountDto;
-using Entity.DTOs.FeatureDescriptionDto;
+using Entity.DTOs.FeatureDetailDto;
 using Entity.DTOs.FeatureDto;
 using Entity.DTOs.OpeningHourDto;
 using Entity.DTOs.OpeningHoursDto;
+using Entity.DTOs.OrderDetailDto;
+using Entity.DTOs.OrderDto;
 using Entity.DTOs.ProductDto;
+using Entity.DTOs.RestaurantTableDto;
 using Entity.DTOs.SocialMediaDto;
 using Entity.DTOs.TestimonialDto;
 
@@ -44,10 +47,10 @@ namespace Business.Mapping.AutoMapper
             CreateMap<Discount, UpdateDiscountDto>().ReverseMap();
             CreateMap<Discount, GetByIdDiscountDto>().ReverseMap();
 
-            CreateMap<FeatureDescription, ResultFeatureDescriptionDto>().ReverseMap();
-            CreateMap<FeatureDescription, CreateFeatureDescriptionDto>().ReverseMap();
-            CreateMap<FeatureDescription, UpdateFeatureDescriptionDto>().ReverseMap();
-            CreateMap<FeatureDescription, GetByIdFeatureDescriptionDto>().ReverseMap();
+            CreateMap<FeatureDetail, ResultFeatureDetailDto>().ReverseMap();
+            CreateMap<FeatureDetail, CreateFeatureDetailDto>().ReverseMap();
+            CreateMap<FeatureDetail, UpdateFeatureDetailDto>().ReverseMap();
+            CreateMap<FeatureDetail, GetByIdFeatureDetailDto>().ReverseMap();
 
             CreateMap<Feature, ResultFeatureDto>().ReverseMap();
             CreateMap<Feature, CreateFeatureDto>().ReverseMap();
@@ -73,6 +76,21 @@ namespace Business.Mapping.AutoMapper
             CreateMap<Testimonial, CreateTestimonialDto>().ReverseMap();
             CreateMap<Testimonial, UpdateTestimonialDto>().ReverseMap();
             CreateMap<Testimonial, GetByIdTestimonialDto>().ReverseMap();
+
+            CreateMap<Order, ResultOrderDto>().ReverseMap();
+            CreateMap<Order, CreateOrderDto>().ReverseMap();
+            CreateMap<Order, UpdateOrderDto>().ReverseMap();
+            CreateMap<Order, GetByIdOrderDto>().ReverseMap();
+
+            CreateMap<OrderDetail, ResultOrderDetailDto>().ReverseMap();
+            CreateMap<OrderDetail, CreateOrderDetailDto>().ReverseMap();
+            CreateMap<OrderDetail, UpdateOrderDetailDto>().ReverseMap();
+            CreateMap<OrderDetail, GetByIdOrderDetailDto>().ReverseMap();
+
+            CreateMap<RestaurantTable, ResultRestaurantTableDto>().ReverseMap();
+            CreateMap<RestaurantTable, CreateRestaurantTableDto>().ReverseMap();
+            CreateMap<RestaurantTable, UpdateRestaurantTableDto>().ReverseMap();
+            CreateMap<RestaurantTable, GetByIdRestaurantTableDto>().ReverseMap();
         }
     }
 }

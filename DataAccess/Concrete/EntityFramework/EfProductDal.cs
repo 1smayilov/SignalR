@@ -35,5 +35,55 @@ namespace DataAccess.Concrete.EntityFramework
                 return result;
             } 
         }
+
+        public async Task<int> ProductCountAsync()
+        {
+            using(var context = new SignalRContext())
+            {
+                return await context.Products.CountAsync();
+            }
+        }
+
+        public async Task<string> ProductNameByMaxPriceAsync()
+        {
+            using(var context = new SignalRContext())
+            {
+                var result = await context.Products
+                    .OrderByDescending(p=>p.Price)
+                    .Select(p=>p.ProductName)
+                    .FirstOrDefaultAsync();
+                return result;
+            }
+        }
+
+        public async Task<string> ProductNameByMinPriceAsync()
+        {
+            using (var context = new SignalRContext())
+            {
+                var result = await context.Products
+                    .OrderBy(context => context.Price)
+                    .Select(p => p.ProductName)
+                    .FirstOrDefaultAsync();
+                return result;
+            }
+        }
+
+        public async Task<decimal> ProductPriceAvgAsync()
+        {
+            using(var context = new SignalRContext())
+            {
+                return await context.Products.AverageAsync(p => p.Price);
+            }
+        }
+
+        public async Task<decimal> ProductPriceAvgByBurgerAsync()
+        {
+            using(var context = new SignalRContext())
+            {
+                return await context.Products
+                    .Where(p => p.Category.CategoryName == "Burgerlər")
+                    .AverageAsync(p => p.Price);
+            }
+        }
     }
 }

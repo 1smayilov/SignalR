@@ -27,19 +27,26 @@ namespace WebApi.Controllers
 			var serviceResult = await _featureService.GetAllAsync();
 			var mapResult = _mapper.Map<List<ResultFeatureDto>>(serviceResult.Data);
 			var dataResult = new DataResult<List<ResultFeatureDto>>(mapResult, serviceResult.Success, serviceResult.Message);
-			return serviceResult.Success ? Ok(dataResult) : BadRequest(serviceResult);
+			return serviceResult.Success ? Ok(dataResult) : BadRequest(dataResult);
 		}
 
-		[HttpGet("GetById")]
+		[HttpGet("{id}")]
 		public async Task<IActionResult> GetByIdAsync(int id)
 		{
 			var serviceResult = await _featureService.GetByIdAsync(id);
 			var mapResult = _mapper.Map<GetByIdFeatureDto>(serviceResult.Data);
 			var dataResult = new DataResult<GetByIdFeatureDto>(mapResult, serviceResult.Success, serviceResult.Message);
-			return serviceResult.Success ? Ok(dataResult) : BadRequest(serviceResult);
+			return serviceResult.Success ? Ok(dataResult) : BadRequest(dataResult);
 		}
 
-		[HttpPost]
+		[HttpGet("FeatureListWithFeatureDetails")]
+		public async Task<IActionResult> FeatureListWithFeatureDetailsAsync()
+		{
+			var serviceResult = await _featureService.GetFeatureDetailsAsync();
+			return serviceResult.Success ? Ok(serviceResult) : BadRequest(serviceResult);
+		}
+
+        [HttpPost]
 		public async Task<IActionResult> AddAsync(CreateFeatureDto createFeatureDto)
 		{
 			var data = _mapper.Map<Feature>(createFeatureDto);

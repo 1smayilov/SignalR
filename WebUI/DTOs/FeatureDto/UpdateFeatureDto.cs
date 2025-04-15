@@ -1,6 +1,6 @@
 ﻿using Core.Entities;
 using Entity.Concrete;
-using Entity.DTOs.FeatureDescriptionDto;
+using Entity.DTOs.FeatureDetailDto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,7 @@ namespace WebUI.DTOs.FeatureDto
     public class UpdateFeatureDto 
     {
         public int FeatureId { get; set; }
-        public List<UpdateFeatureDescriptionDto> Descriptions { get; set; }
+        public string Name { get; set; }
 
     }
 }

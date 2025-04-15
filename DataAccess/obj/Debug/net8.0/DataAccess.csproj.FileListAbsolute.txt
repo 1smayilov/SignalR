@@ -17,3 +17,4 @@ C:\Users\Etimad\Desktop\SignalR\DataAccess\bin\Debug\net8.0\Entity.dll
 C:\Users\Etimad\Desktop\SignalR\DataAccess\bin\Debug\net8.0\Core.pdb
 C:\Users\Etimad\Desktop\SignalR\DataAccess\bin\Debug\net8.0\Entity.pdb
 C:\Users\Etimad\Desktop\SignalR\DataAccess\obj\Debug\net8.0\DataAccess.csproj.Up2Date
+C:\Users\Etimad\Desktop\SignalR\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json

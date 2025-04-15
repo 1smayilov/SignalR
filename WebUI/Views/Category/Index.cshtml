@@ -1,8 +1,9 @@
 ﻿@model List<ResultCategoryDto>
 
 @{
-    ViewData["Title"] = "Index";
-    Layout = "~/Views/AdminLayout/Index.cshtml";
+	ViewData["Title"] = "Index";
+	Layout = "~/Views/AdminLayout/Index.cshtml";
+	int count = 0;
 }
 
 
@@ -45,8 +46,9 @@
 							<tbody>
 								@foreach (var item in Model)
 								{
+									count++;
 									<tr>
-										<td>@item.CategoryId</td>
+										<td>@count</td>
 										<td>@item.CategoryName</td>
 										<td>@item.Status</td>
 										<td><a href="/Category/UpdateCategory/@item.CategoryId" class="btn btn-outline-success">Yenilə</a></td>

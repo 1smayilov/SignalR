@@ -27,7 +27,7 @@ namespace WebApi.Controllers
 			var serviceResult = await _categoryService.GetAllAsync();
 			var mapResult = _mapper.Map<List<ResultCategoryDto>>(serviceResult.Data);
 			var dataResult = new DataResult<List<ResultCategoryDto>>(mapResult, serviceResult.Success, serviceResult.Message);
-			return serviceResult.Success ? Ok(dataResult) : BadRequest(serviceResult);
+			return serviceResult.Success ? Ok(dataResult) : BadRequest(dataResult);
 		}
 
 		[HttpGet("{id}")]
@@ -36,10 +36,39 @@ namespace WebApi.Controllers
 			var serviceResult = await _categoryService.GetByIdAsync(id);
 			var mapResult = _mapper.Map<GetByIdCategoryDto>(serviceResult.Data);
 			var dataResult = new DataResult<GetByIdCategoryDto>(mapResult, serviceResult.Success, serviceResult.Message);
-			return serviceResult.Success ? Ok(dataResult) : BadRequest(serviceResult);
+			return serviceResult.Success ? Ok(dataResult) : BadRequest(dataResult);
 		}
 
-		[HttpPost]
+		[HttpGet("CategoryCount")]
+		public async Task<IActionResult> CategoryCountAsync()
+		{
+			var result = await _categoryService.CategoryCountAsync();
+			return result.Success ? Ok(result) : BadRequest(result);
+        }
+
+        [HttpGet("ActiveCategoryCount")]
+		public async Task<IActionResult> ActiveCategoryCountAsync()
+        {
+            var result = await _categoryService.ActiveCategoryCountAsync();
+            return result.Success ? Ok(result) : BadRequest(result);
+        }
+
+        [HttpGet("PassiveCategoryCount")]
+        public async Task<IActionResult> PassiveCategoryCountAsync()
+        {
+            var result = await _categoryService.PassiveCategoryCountAsync();
+            return result.Success ? Ok(result) : BadRequest(result);
+        }
+
+		[HttpGet("ProductCountByCategoryNameQəlyanaltılar")]
+        public async Task<IActionResult> ProductCountByCategoryNameQəlyanaltılarAsync()
+		{
+            var result = await _categoryService.ProductCountByCategoryNameQəlyanaltılarAsync();
+            return result.Success ? Ok(result) : BadRequest(result);
+        }
+
+
+        [HttpPost]
 		public async Task<IActionResult> AddAsync(CreateCategoryDto createCategoryDto)
 		{
 			var data = _mapper.Map<Category>(createCategoryDto);

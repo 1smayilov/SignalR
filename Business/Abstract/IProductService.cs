@@ -12,6 +12,12 @@ namespace Business.Abstract
     public interface IProductService : IGenericService<Product>
     {
         Task<IDataResult<List<ResultProductWithCategory>>> GetAllProductsWithCategories();
+        Task<IDataResult<int>> ProductCountAsync();
+        Task<IDataResult<decimal>> ProductPriceAvgAsync();
+        Task<IDataResult<string>> ProductNameByMaxPriceAsync();
+        Task<IDataResult<string>> ProductNameByMinPriceAsync();
+        Task<IDataResult<decimal>> ProductPriceAvgByBurgerAsync();
+
 
     }
 }

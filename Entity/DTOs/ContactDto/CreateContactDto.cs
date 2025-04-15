@@ -9,7 +9,6 @@ namespace Entity.DTOs.ContactDto
 {
     public class CreateContactDto : IDto
     {
-        public int ContactId { get; set; }
         public string Location { get; set; }
         public string Phone { get; set; }
         public string Mail { get; set; }

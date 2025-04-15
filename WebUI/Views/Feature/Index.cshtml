@@ -1,0 +1,60 @@
+﻿@model List<ResultFeatureDto>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+    int count = 0;
+}
+
+<div class="content">
+    <div class="container-fluid">
+        <h4 class="page-title">Nümayiş etdirilənlərin Əməliyyatları</h4>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-title">Nümayiş etdirilənlər Hissəsinin Listi</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-sub">
+                            Nümayiş etdirilənlərin ilə bağlı əməliyyatları aşağıdan görə bilərsiniz.
+                        </div>
+                        <table class="table mt-3">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Ad</th>
+                                    <th scope="col">Nümayiş etdirilənlər</th>
+                                    <th scope="col">Yenilə</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    count++;
+                                    <tr>
+                                        <td>@count</td>
+                                        <td>@item.Name</td>
+                                        <td>
+                                            @foreach (var featureDetails in item.FeatureDetails)
+                                            {
+                                                <p>@featureDetails.Title</p>
+                                                <p>@featureDetails.Description</p>
+                                            }
+                                        </td>
+                                        <td><a href="/Feature/UpdateFeature/@item.FeatureId" class="btn btn-outline-success">Yenilə</a></td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+

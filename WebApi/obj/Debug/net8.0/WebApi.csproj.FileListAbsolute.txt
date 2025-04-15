@@ -47,7 +47,6 @@ C:\Users\Etimad\Desktop\SignalR\WebApi\bin\Debug\net8.0\System.Composition.Conve
 C:\Users\Etimad\Desktop\SignalR\WebApi\bin\Debug\net8.0\System.Composition.Hosting.dll
 C:\Users\Etimad\Desktop\SignalR\WebApi\bin\Debug\net8.0\System.Composition.Runtime.dll
 C:\Users\Etimad\Desktop\SignalR\WebApi\bin\Debug\net8.0\System.Composition.TypedParts.dll
-C:\Users\Etimad\Desktop\SignalR\WebApi\bin\Debug\net8.0\System.Text.Json.dll
 C:\Users\Etimad\Desktop\SignalR\WebApi\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Etimad\Desktop\SignalR\WebApi\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Etimad\Desktop\SignalR\WebApi\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -151,3 +150,9 @@ C:\Users\Etimad\Desktop\SignalR\WebApi\bin\Debug\net8.0\AutoMapper.dll
 C:\Users\Etimad\Desktop\SignalR\WebApi\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Etimad\Desktop\SignalR\WebApi\bin\Debug\net8.0\Business.dll
 C:\Users\Etimad\Desktop\SignalR\WebApi\bin\Debug\net8.0\Business.pdb
+C:\Users\Etimad\Desktop\SignalR\WebApi\obj\Debug\net8.0\WebApi.sourcelink.json
+C:\Users\Etimad\Desktop\SignalR\WebApi\obj\Debug\net8.0\WebApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Etimad\Desktop\SignalR\WebApi\bin\Debug\net8.0\WebApi.staticwebassets.endpoints.json
+C:\Users\Etimad\Desktop\SignalR\WebApi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Etimad\Desktop\SignalR\WebApi\obj\Debug\net8.0\staticwebassets\msbuild.WebApi.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\Etimad\Desktop\SignalR\WebApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

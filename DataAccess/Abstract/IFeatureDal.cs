@@ -1,5 +1,6 @@
 ﻿using Core.DataAccess;
 using Entity.Concrete;
+using Entity.DTOs.FeatureDto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +11,6 @@ namespace DataAccess.Abstract
 {
     public interface IFeatureDal : IEntityRepository<Feature>
     {
+        Task<List<ResultFeatureDto>> GetFeatureDetailsAsync();
     }
 }

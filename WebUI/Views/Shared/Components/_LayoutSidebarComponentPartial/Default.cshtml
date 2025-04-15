@@ -1,127 +1,140 @@
-﻿<div class="sidebar">
-	<div class="scrollbar-inner sidebar-wrapper">
-		<div class="user">
-			<div class="photo">
-				<img src="~/Ready-Bootstrap-Dashboard-master/assets/img/profile.jpg">
-			</div>
-			<div class="info">
-				<a class="" data-toggle="collapse" href="#collapseExample" aria-expanded="true">
-					<span>
-						Admin Panel 
-						<span class="user-level">Administrator</span>
-						<span class="caret"></span>
-					</span>
-				</a>
-				<div class="clearfix"></div>
+﻿<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
-				<div class="collapse in" id="collapseExample" aria-expanded="true" style="">
-					<ul class="nav">
-						<li>
-							<a href="#profile">
-								<span class="link-collapse">Menyunu Gör</span>
-							</a>
-						</li>
-						<li>
-							<a href="#edit">
-								<span class="link-collapse">Şifrəni Yenilə</span>
-							</a>
-						</li>
-						<li>
-							<a href="#settings">
-								<span class="link-collapse">Parametrlər</span>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<ul class="nav">
-			<li class="nav-item">
-				<a href="index.html">
-					<i class="la la-dashboard"></i>
-					<p>Dashboard</p>
-					<span class="badge badge-count">5</span>
-				</a>
-			</li>
-			<li class="nav-item">
-				<a href="components.html">
-					<i class="la la-table"></i>
-					<p>Menyunu Gör</p>
-					<span class="badge badge-count">14</span>
-				</a>
-			</li>
-			<li class="nav-item">
-				<a href="/Category/Index/">
-					<i class="la la-keyboard-o"></i>
-					<p>Kateqoriyalar</p>
-				</a>
-			</li>
-			<li class="nav-item">
-				<a href="/Product/Index/">
-					<i class="la la-th"></i>
-					<p>Məhsullar</p>
-				</a>
-			</li>
-			<li class="nav-item">
-				<a href="notifications.html">
-					<i class="la la-bell"></i>
-					<p>Rezervasiyalar</p>
-					<span class="badge badge-success">3</span>
-				</a>
-			</li>
-			<li class="nav-item">
-				<a href="/About/Index/">
-					<i class="la la-font"></i>
-					<p>Haqqımızda</p>
-					<span class="badge badge-danger">25</span>
-				</a>
-			</li>
-			<li class="nav-item">
-				<a href="icons.html">
-					<i class="la la-fonticons"></i>
-					<p>Mesajlar</p>
-				</a>
-			</li>
-			<li class="nav-item">
-				<a href="icons.html">
-					<i class="la la-fonticons"></i>
-					<p>Endirimlər</p>
-				</a>
-			</li><li class="nav-item">
-				<a href="icons.html">
-					<i class="la la-fonticons"></i>
-					<p>Önə Çıxanlar</p>
-				</a>
-			</li><li class="nav-item">
-				<a href="icons.html">
-					<i class="la la-fonticons"></i>
-					<p>Referanslar</p>
-				</a>
-			</li>
-			<li class="nav-item">
-				<a href="icons.html">
-					<i class="la la-fonticons"></i>
-					<p>Sosial Media</p>
-				</a>
-			</li>
-			<li class="nav-item">
-				<a href="icons.html">
-					<i class="la la-fonticons"></i>
-					<p>Statistikalar</p>
-				</a>
-			</li>
-			<li class="nav-item">
-				<a href="icons.html">
-					<i class="la la-fonticons"></i>
-					<p>Parametrlər</p>
-				</a>
-			</li>
-			<li class="nav-item">
-				<a href="icons.html">
-					<i class="la la-fonticons"></i>
-					<p>Çıxış Et</p>
-				</a>
-			</li>
-		</ul>
-	</div>
+<style>
+    .sidebar .nav-item i {
+        color: #554 !important; /* Force icon color to black */
+    }
+
+    .sidebar .nav-item p {
+        color: #554 !important; /* Set text color to black */
+    }
+</style>
+
+<div class="sidebar">
+    <div class="scrollbar-inner sidebar-wrapper">
+        <div class="user">
+            <div class="photo">
+                <img src="~/Ready-Bootstrap-Dashboard-master/assets/img/profile.jpg" />
+            </div>
+            <div class="info">
+                <a class="" data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+                    <span>
+                        Admin Panel
+                        <span class="user-level">Administrator</span>
+                        <span class="caret"></span>
+                    </span>
+                </a>
+                <div class="clearfix"></div>
+
+                <div class="collapse in" id="collapseExample" aria-expanded="true">
+                    <ul class="nav">
+                        <li>
+                            <a href="#profile">
+                                <span class="link-collapse">Menyunu Gör</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#edit">
+                                <span class="link-collapse">Şifrəni Yenilə</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#settings">
+                                <span class="link-collapse">Parametrlər</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <ul class="nav">
+            <li class="nav-item">
+                <a asp-controller="Dashboard" asp-action="Index">
+                    <i class="bi bi-speedometer2"></i><p>Dashboard</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="Menu" asp-action="Index">
+                    <i class="bi bi-list"></i><p>Menyunu Gör</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="Category" asp-action="Index">
+                    <i class="bi bi-tags"></i><p>Kateqoriyalar</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="Product" asp-action="Index">
+                    <i class="bi bi-box-seam"></i><p>Məhsullar</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="Booking" asp-action="Index">
+                    <i class="bi bi-calendar-check"></i><p>Rezervasiyalar</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="About" asp-action="Index">
+                    <i class="bi bi-info-circle"></i><p>Haqqımızda</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="Testimonial" asp-action="Index">
+                    <i class="bi bi-chat-dots"></i><p>Rəylər</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="Discount" asp-action="Index">
+                    <i class="bi bi-percent"></i><p>Endirimlər</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="Feature" asp-action="Index">
+                    <i class="bi bi-star-fill"></i><p>Önə Çıxanlar</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="FeatureDetail" asp-action="Index">
+                    <i class="bi bi-info-circle"></i><p>Önə Çıxanlar Haqqında</p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a asp-controller="Contact" asp-action="Index">
+                    <i class="bi bi-people-fill"></i><p>Əlaqə</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="SocialMedia" asp-action="Index">
+                    <i class="bi bi-share-fill"></i><p>Sosial Media</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="OpeningHour" asp-action="Index">
+                    <i class="bi bi-bar-chart-line-fill"></i><p>Restoranın Açılma Vaxtı</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="Statistic" asp-action="Index">
+                    <i class="bi bi-bar-chart-line-fill"></i><p>Statistika</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="ProgressBar" asp-action="Index">
+                    <i class="bi bi-bar-chart-line-fill"></i><p>Maliyyə Durumu</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="Settings" asp-action="Index">
+                    <i class="bi bi-gear-fill"></i><p>Parametrlər</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-controller="Login" asp-action="LogOut">
+                    <i class="bi bi-box-arrow-right"></i><p>Çıxış Et</p>
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>

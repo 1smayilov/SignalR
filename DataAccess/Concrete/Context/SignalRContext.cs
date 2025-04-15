@@ -19,11 +19,15 @@ namespace DataAccess.Concrete.Context
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Discount> Discounts { get; set; }
         public DbSet<Feature> Features { get; set; }
-        public DbSet<FeatureDescription> FeatureDescriptions { get; set; }
+        public DbSet<FeatureDetail> FeatureDetails { get; set; }
         public DbSet<OpeningHours> OpeningHours { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<SocialMedia> SocialMedias { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
+        public DbSet<MoneyCase> MoneyCases { get; set; }
+        public DbSet<RestaurantTable> RestaurantTables { get; set; }
 
 
 

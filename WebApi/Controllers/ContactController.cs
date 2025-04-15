@@ -27,7 +27,7 @@ namespace WebApi.Controllers
 			var serviceResult = await _contactService.GetAllAsync();
 			var mapResult = _mapper.Map<List<ResultContactDto>>(serviceResult.Data);
 			var dataResult = new DataResult<List<ResultContactDto>>(mapResult, serviceResult.Success, serviceResult.Message);
-			return serviceResult.Success ? Ok(dataResult) : BadRequest(serviceResult);
+			return serviceResult.Success ? Ok(dataResult) : BadRequest(dataResult);
 		}
 
 		[HttpGet("{id}")]
@@ -36,7 +36,7 @@ namespace WebApi.Controllers
 			var serviceResult = await _contactService.GetByIdAsync(id);
 			var mapResult = _mapper.Map<GetByIdContactDto>(serviceResult.Data);
 			var dataResult = new DataResult<GetByIdContactDto>(mapResult, serviceResult.Success, serviceResult.Message);
-			return serviceResult.Success ? Ok(dataResult) : BadRequest(serviceResult);
+			return serviceResult.Success ? Ok(dataResult) : BadRequest(dataResult);
 		}
 
 		[HttpPost]

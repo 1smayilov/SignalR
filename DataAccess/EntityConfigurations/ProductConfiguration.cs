@@ -14,11 +14,19 @@ namespace DataAccess.EntityConfigurations
         public void Configure(EntityTypeBuilder<Product> builder)
         {
             builder.HasKey(p => p.ProductId);
+
             builder.HasOne(p=>p.Category)
                 .WithMany(c => c.Products)
                 .HasForeignKey(p => p.CategoryId)
                 .IsRequired();
-                
+
+
+            builder.HasMany(p => p.OrderDetails)
+                .WithOne(od=>od.Product)
+                .HasForeignKey(od => od.ProductId)
+                .IsRequired();
+
+
         }
     }
 }

@@ -32,7 +32,7 @@ namespace WebApi.Controllers
             var serviceResult = await _aboutService.GetAllAsync();
             var mapResult = _mapper.Map<List<ResultAboutDto>>(serviceResult.Data);
             var dataResult = new DataResult<List<ResultAboutDto>>(mapResult, serviceResult.Success, serviceResult.Message);
-            return serviceResult.Success ? Ok(dataResult) : BadRequest(serviceResult);
+            return serviceResult.Success ? Ok(dataResult) : BadRequest(dataResult);
         }
 
 
@@ -42,7 +42,7 @@ namespace WebApi.Controllers
             var serviceResult = await _aboutService.GetByIdAsync(id);
             var mapResult = _mapper.Map<GetByIdAboutDto>(serviceResult.Data);
             var dataResult = new DataResult<GetByIdAboutDto>(mapResult, serviceResult.Success, serviceResult.Message);
-            return serviceResult.Success ? Ok(dataResult) : BadRequest(serviceResult);
+            return serviceResult.Success ? Ok(dataResult) : BadRequest(dataResult);
         }
 
 

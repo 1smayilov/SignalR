@@ -51,3 +51,4 @@ C:\Users\Etimad\Desktop\SignalR\Core\obj\Debug\net8.0\refint\Core.dll
 C:\Users\Etimad\Desktop\SignalR\Core\obj\Debug\net8.0\Core.pdb
 C:\Users\Etimad\Desktop\SignalR\Core\obj\Debug\net8.0\Core.genruntimeconfig.cache
 C:\Users\Etimad\Desktop\SignalR\Core\obj\Debug\net8.0\ref\Core.dll
+C:\Users\Etimad\Desktop\SignalR\Core\obj\Debug\net8.0\Core.sourcelink.json

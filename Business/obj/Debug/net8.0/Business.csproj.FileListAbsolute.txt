@@ -17,3 +17,4 @@ C:\Users\Etimad\Desktop\SignalR\Business\bin\Debug\net8.0\DataAccess.pdb
 C:\Users\Etimad\Desktop\SignalR\Business\bin\Debug\net8.0\Entity.pdb
 C:\Users\Etimad\Desktop\SignalR\Business\obj\Debug\net8.0\Business.csproj.AssemblyReference.cache
 C:\Users\Etimad\Desktop\SignalR\Business\obj\Debug\net8.0\Business.csproj.Up2Date
+C:\Users\Etimad\Desktop\SignalR\Business\obj\Debug\net8.0\Business.sourcelink.json

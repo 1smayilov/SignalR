@@ -4,6 +4,7 @@ using Core.Utilities.Results;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
 using Entity.Concrete;
+using Entity.DTOs.FeatureDto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -43,6 +44,12 @@ namespace Business.Concrete
         {
             var result = await _featureDal.GetAsync(a => a.FeatureId == id);
             return new SuccessDataResult<Feature>(result, Messages.FeatureFetchedById);
+        }
+
+        public async Task<IDataResult<List<ResultFeatureDto>>> GetFeatureDetailsAsync()
+        {
+            var result = await _featureDal.GetFeatureDetailsAsync();
+            return new SuccessDataResult<List<ResultFeatureDto>>(result, Messages.FeatureListedWithFeatureDetails);
         }
 
         public async Task<IResult> UpdateAsync(Feature entity)

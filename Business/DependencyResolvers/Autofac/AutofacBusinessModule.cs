@@ -33,8 +33,8 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<FeatureManager>().As<IFeatureService>();
             builder.RegisterType<EfFeatureDal>().As<IFeatureDal>();
 
-            builder.RegisterType<FeatureDescriptionManager>().As<IFeatureDescriptionService>();
-            builder.RegisterType<EfFeatureDescriptionDal>().As<IFeatureDescriptionDal>();
+            builder.RegisterType<FeatureDetailManager>().As<IFeatureDetailService>();
+            builder.RegisterType<EfFeatureDetailDal>().As<IFeatureDetailDal>();
 
             builder.RegisterType<OpeningHourManager>().As<IOpeningHourService>();
             builder.RegisterType<EfOpeningHourDal>().As<IOpeningHoursDal>();
@@ -47,6 +47,18 @@ namespace Business.DependencyResolvers.Autofac
 
             builder.RegisterType<TestimonialManager>().As<ITestimonialService>();
             builder.RegisterType<EfTestimonialDal>().As<ITestimonialDal>();
+
+            builder.RegisterType<OrderManager>().As<IOrderService>();
+            builder.RegisterType<EfOrderDal>().As<IOrderDal>();
+
+            builder.RegisterType<OrderDetailManager>().As<IOrderDetailService>();
+            builder.RegisterType<EfOrderDetailDal>().As<IOrderDetailDal>();
+
+            builder.RegisterType<OrderPriceUpdaterManager>().As<IOrderPriceUpdaterService>();
+
+            builder.RegisterType<RestaurantTableManager>().As<IRestaurantTableService>();
+            builder.RegisterType<EfRestaurantTableDal>().As<IRestaurantTableDal>();
+
 
             builder.Register(c =>
             {

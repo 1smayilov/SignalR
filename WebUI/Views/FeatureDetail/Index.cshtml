@@ -1,0 +1,57 @@
+﻿@model List<ResultFeatureDetailDto>
+
+@{
+	ViewData["Title"] = "Index";
+	Layout = "~/Views/AdminLayout/Index.cshtml";
+	int count = 0;
+}
+
+<div class="content">
+	<div class="container-fluid">
+		<h4 class="page-title">Nümayiş Etdirilənlərin Əməliyyatları</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-header">
+						<div class="card-title">Nümayiş Etdirilənlər Hissəsinin Listi</div>
+					</div>
+					<div class="card-body">
+						<div class="card-sub">
+							Nümayiş Etdirilənlər ilə bağlı əməliyyatları aşağıdan görə bilərsiniz.
+						</div>
+						<table class="table mt-3">
+							<thead>
+								<tr>
+									<th scope="col">#</th>
+									<th scope="col">Adı</th>
+									<th scope="col">Məlumat</th>
+									<th scope="col">Yenilə</th>
+									<th scope="col">Sil</th>
+								</tr>
+							</thead>
+							<tbody>
+								@foreach (var item in Model)
+								{
+									count++;
+									<tr>
+										<td>@count</td>
+										<td>@item.Title</td>
+										<td>@item.Description</td>
+										<td><a href="/FeatureDetail/UpdateFeatureDetail/@item.FeatureDetailId" class="btn btn-outline-success">Yenilə</a></td>
+										<td><a href="/FeatureDetail/DeleteFeatureDetail/@item.FeatureDetailId" class="btn btn-outline-danger">Sil</a></td>
+									</tr>
+								}
+							</tbody>
+						</table>
+						<a href="/FeatureDetail/CreateFeatureDetail/" class="btn btn-outline-primary">Yeni Nümayiş Etdirilənlər Əlavə Et</a>
+					</div>
+				</div>
+
+			</div>
+
+
+		</div>
+	</div>
+</div>
+
+

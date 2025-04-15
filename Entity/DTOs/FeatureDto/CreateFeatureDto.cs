@@ -1,6 +1,6 @@
 ﻿using Core.Entities;
 using Entity.Concrete;
-using Entity.DTOs.FeatureDescriptionDto;
+using Entity.DTOs.FeatureDetailDto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +11,6 @@ namespace Entity.DTOs.FeatureDto
 {
     public class CreateFeatureDto : IDto
     {
-        public List<CreateFeatureDescriptionDto> Descriptions { get; set; }
+        public string Name { get; set; }
     }
 }

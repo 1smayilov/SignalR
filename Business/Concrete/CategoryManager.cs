@@ -20,10 +20,20 @@ namespace Business.Concrete
             _categoryDal = categoryDal;
         }
 
+        public async Task<IDataResult<int>> ActiveCategoryCountAsync()
+        {
+            return new SuccessDataResult<int>(await _categoryDal.ActiveCategoryCountAsync(), Messages.ActiveCategoryCountFetched);
+        }
+
         public async Task<IResult> AddAsync(Category entity)
         {
             await _categoryDal.AddAsync(entity);
             return new SuccessResult(Messages.CategoryAdded);
+        }
+
+        public async Task<IDataResult<int>> CategoryCountAsync()
+        {
+            return new SuccessDataResult<int>(await _categoryDal.CategoryCountAsync(), Messages.CategoryCountFetched);
         }
 
         public async Task<IResult> DeleteAsync(Category entity)
@@ -42,6 +52,16 @@ namespace Business.Concrete
         {
             var result = await _categoryDal.GetAsync(a => a.CategoryId == id);
             return new SuccessDataResult<Category>(result, Messages.CategoryFetchedById);
+        }
+
+        public async Task<IDataResult<int>> PassiveCategoryCountAsync()
+        {
+            return new SuccessDataResult<int>(await _categoryDal.PassiveCategoryCountAsync(), Messages.PassiveCategoryCountFetched);
+        }
+
+        public async Task<IDataResult<int>> ProductCountByCategoryNameQəlyanaltılarAsync()
+        {
+            return new SuccessDataResult<int>(await _categoryDal.ProductCountByCategoryNameQəlyanaltılarAsync(), Messages.ProductCountByCategoryNameTelevizorFetched);
         }
 
         public async Task<IResult> UpdateAsync(Category entity)

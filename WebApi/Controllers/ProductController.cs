@@ -48,7 +48,42 @@ namespace WebApi.Controllers
 			return serviceResult.Success ? Ok(dataResult) : BadRequest(serviceResult);
 		}
 
-		[HttpPost]
+		[HttpGet("ProductCount")]
+		public async Task<IActionResult> ProductCountAsync()
+		{
+			var result = await _productService.ProductCountAsync();
+			return result.Success ? Ok(result) : BadRequest(result);
+        }
+
+		[HttpGet("ProductPriceAvg")]
+        public async Task<IActionResult> ProductPriceAvgAsync()
+        {
+            var result = await _productService.ProductPriceAvgAsync();
+            return result.Success ? Ok(result) : BadRequest(result);
+        }
+
+        [HttpGet("ProductNameByMaxPrice")]
+        public async Task<IActionResult> ProductNameByMaxPriceAsync()
+        {
+            var result = await _productService.ProductNameByMaxPriceAsync();
+            return result.Success ? Ok(result) : BadRequest(result);
+        }
+
+        [HttpGet("ProductNameByMinPrice")]
+        public async Task<IActionResult> ProductNameByMinPriceAsync()
+        {
+            var result = await _productService.ProductNameByMinPriceAsync();
+            return result.Success ? Ok(result) : BadRequest(result);
+        }
+
+		[HttpGet("ProductPriceAvgByBurger")]
+		public async Task<IActionResult> ProductPriceAvgByBurgerAsync()
+		{
+            var result = await _productService.ProductPriceAvgByBurgerAsync();
+            return result.Success ? Ok(result) : BadRequest(result);
+        }
+
+        [HttpPost]
 		public async Task<IActionResult> AddAsync(CreateProductDto createProductDto)
 		{
 			var data = _mapper.Map<Product>(createProductDto);

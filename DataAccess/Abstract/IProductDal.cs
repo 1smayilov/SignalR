@@ -12,5 +12,10 @@ namespace DataAccess.Abstract
     public interface IProductDal : IEntityRepository<Product>
     {
         Task<List<ResultProductWithCategory>> GetAllProductsWithCategories();
+        Task<int> ProductCountAsync();
+        Task<decimal> ProductPriceAvgAsync();
+        Task<string> ProductNameByMaxPriceAsync();
+        Task<string> ProductNameByMinPriceAsync();
+        Task<decimal> ProductPriceAvgByBurgerAsync();
     }
 }

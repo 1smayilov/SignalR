@@ -52,6 +52,31 @@ namespace Business.Concrete
             return new SuccessDataResult<Product>(result, Messages.ProductFetchedById);
         }
 
+        public async Task<IDataResult<int>> ProductCountAsync()
+        {
+            return new SuccessDataResult<int>(await _productDal.ProductCountAsync(), Messages.ProductCountFetched);
+        }
+
+        public async Task<IDataResult<string>> ProductNameByMaxPriceAsync()
+        {
+            return new SuccessDataResult<string>(await _productDal.ProductNameByMaxPriceAsync(), Messages.ProductNameByMaxPriceFetched);
+        }
+
+        public async Task<IDataResult<string>> ProductNameByMinPriceAsync()
+        {
+            return new SuccessDataResult<string>(await _productDal.ProductNameByMinPriceAsync(), Messages.ProductNameByMinPriceFetched);
+        }
+
+        public async Task<IDataResult<decimal>> ProductPriceAvgAsync()
+        {
+            return new SuccessDataResult<decimal>(await _productDal.ProductPriceAvgAsync(), Messages.ProductPriceAvgFetched);
+        }
+
+        public async Task<IDataResult<decimal>> ProductPriceAvgByBurgerAsync()
+        {
+            return new SuccessDataResult<decimal>(await _productDal.ProductPriceAvgByBurgerAsync(), Messages.ProductPriceAvgByBurgerFetched);
+        }
+
         public async Task<IResult> UpdateAsync(Product entity)
         {
             await _productDal.UpdateAsync(entity);

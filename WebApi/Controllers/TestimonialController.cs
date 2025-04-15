@@ -29,7 +29,7 @@ namespace WebApi.Controllers
 			return serviceResult.Success ? Ok(dataResult) : BadRequest(dataResult);
 		}
 
-		[HttpGet("GetById")]
+		[HttpGet("{id}")]
 		public async Task<IActionResult> GetByIdAsync(int id)
 		{
 			var serviceResult = await _testimonialService.GetByIdAsync(id);
@@ -54,7 +54,7 @@ namespace WebApi.Controllers
 			return result.Success ? Ok(result) : BadRequest(result);
 		}
 
-		[HttpDelete]
+		[HttpDelete("{id}")]
 		public async Task<IActionResult> DeleteAsync(int id)
 		{
 			var data = await _testimonialService.GetByIdAsync(id);

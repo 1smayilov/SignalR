@@ -1,4 +1,7 @@
-﻿using Entity.Concrete;
+﻿using Core.Utilities.Results;
+using Entity.Concrete;
+using Entity.DTOs;
+using Entity.DTOs.FeatureDto;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +12,6 @@ namespace Business.Abstract
 {
     public interface IFeatureService : IGenericService<Feature>
     {
+        Task<IDataResult<List<ResultFeatureDto>>> GetFeatureDetailsAsync();
     }
 }

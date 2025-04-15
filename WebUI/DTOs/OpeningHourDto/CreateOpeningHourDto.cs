@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WebUI.DTOs.OpeningHoursDto
+namespace WebUI.DTOs.OpeningHourDto
 {
     public class CreateOpeningHourDto 
     {

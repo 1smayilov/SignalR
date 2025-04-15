@@ -164,18 +164,22 @@ namespace DataAccess.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FeatureId"));
 
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("FeatureId");
 
                     b.ToTable("Features");
                 });
 
-            modelBuilder.Entity("Entity.Concrete.FeatureDescription", b =>
+            modelBuilder.Entity("Entity.Concrete.FeatureDetail", b =>
                 {
-                    b.Property<int>("FeatureDescriptionId")
+                    b.Property<int>("FeatureDetailId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FeatureDescriptionId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FeatureDetailId"));
 
                     b.Property<string>("Description")
                         .IsRequired()
@@ -188,11 +192,27 @@ namespace DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("FeatureDescriptionId");
+                    b.HasKey("FeatureDetailId");
 
                     b.HasIndex("FeatureId");
 
-                    b.ToTable("FeatureDescriptions");
+                    b.ToTable("FeatureDetails");
+                });
+
+            modelBuilder.Entity("Entity.Concrete.MoneyCase", b =>
+                {
+                    b.Property<int>("MoneyCaseId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MoneyCaseId"));
+
+                    b.Property<decimal>("TotalAmount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("MoneyCaseId");
+
+                    b.ToTable("MoneyCases");
                 });
 
             modelBuilder.Entity("Entity.Concrete.OpeningHours", b =>
@@ -214,6 +234,65 @@ namespace DataAccess.Migrations
                     b.HasKey("OpeningHoursId");
 
                     b.ToTable("OpeningHours");
+                });
+
+            modelBuilder.Entity("Entity.Concrete.Order", b =>
+                {
+                    b.Property<int>("OrderId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderId"));
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TableNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("OrderId");
+
+                    b.ToTable("Orders");
+                });
+
+            modelBuilder.Entity("Entity.Concrete.OrderDetail", b =>
+                {
+                    b.Property<int>("OrderDetailId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("OrderDetailId"));
+
+                    b.Property<int>("Count")
+                        .HasColumnType("int");
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("TotalPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("UnitPrice")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("OrderDetailId");
+
+                    b.HasIndex("OrderId");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("OrderDetails");
                 });
 
             modelBuilder.Entity("Entity.Concrete.Product", b =>
@@ -252,6 +331,26 @@ namespace DataAccess.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("Entity.Concrete.RestaurantTable", b =>
+                {
+                    b.Property<int>("RestaurantTableId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RestaurantTableId"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
+
+                    b.HasKey("RestaurantTableId");
+
+                    b.ToTable("RestaurantTables");
+                });
+
             modelBuilder.Entity("Entity.Concrete.SocialMedia", b =>
                 {
                     b.Property<int>("SocialMediaId")
@@ -260,14 +359,17 @@ namespace DataAccess.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SocialMediaId"));
 
-                    b.Property<int>("Icon")
-                        .HasColumnType("int");
+                    b.Property<string>("Icon")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Title")
-                        .HasColumnType("int");
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Url")
-                        .HasColumnType("int");
+                    b.Property<string>("Url")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("SocialMediaId");
 
@@ -307,15 +409,34 @@ namespace DataAccess.Migrations
                     b.ToTable("Testimonials");
                 });
 
-            modelBuilder.Entity("Entity.Concrete.FeatureDescription", b =>
+            modelBuilder.Entity("Entity.Concrete.FeatureDetail", b =>
                 {
                     b.HasOne("Entity.Concrete.Feature", "Feature")
-                        .WithMany("Descriptions")
+                        .WithMany("FeatureDetails")
                         .HasForeignKey("FeatureId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Feature");
+                });
+
+            modelBuilder.Entity("Entity.Concrete.OrderDetail", b =>
+                {
+                    b.HasOne("Entity.Concrete.Order", "Order")
+                        .WithMany("OrderDetails")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Entity.Concrete.Product", "Product")
+                        .WithMany("OrderDetails")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
+
+                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("Entity.Concrete.Product", b =>
@@ -336,7 +457,17 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("Entity.Concrete.Feature", b =>
                 {
-                    b.Navigation("Descriptions");
+                    b.Navigation("FeatureDetails");
+                });
+
+            modelBuilder.Entity("Entity.Concrete.Order", b =>
+                {
+                    b.Navigation("OrderDetails");
+                });
+
+            modelBuilder.Entity("Entity.Concrete.Product", b =>
+                {
+                    b.Navigation("OrderDetails");
                 });
 #pragma warning restore 612, 618
         }

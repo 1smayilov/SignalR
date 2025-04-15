@@ -14,7 +14,7 @@ namespace DataAccess.EntityConfigurations
         public void Configure(EntityTypeBuilder<Feature> builder)
         {
             builder.HasKey(f => f.FeatureId);
-            builder.HasMany(f => f.Descriptions)
+            builder.HasMany(f => f.FeatureDetails)
                 .WithOne(fd=>fd.Feature)  
                 .HasForeignKey(fd=>fd.FeatureId)
                 .IsRequired();

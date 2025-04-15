@@ -10,5 +10,9 @@ namespace DataAccess.Abstract
 {
     public interface ICategoryDal : IEntityRepository<Category>
     {
+        Task<int> CategoryCountAsync(); 
+        Task<int> ActiveCategoryCountAsync(); 
+        Task<int> PassiveCategoryCountAsync();
+        Task<int> ProductCountByCategoryNameQəlyanaltılarAsync();
     }
 }
